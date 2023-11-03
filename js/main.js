@@ -67,14 +67,14 @@ btnHaut.addEventListener("click", function(){
 })
 btnBas.addEventListener("click", function(){
     if (value >= 1) {
-        const dr =  repliqueArrayCopies.pop()
-        repliqueArray.push(dr)
+        const dr =  repliqueArray.pop()
+        repliqueArray.unshift(dr)
     }else{
         afficheRep.innerHTML = "Aucune Réplique Séléctionée Idiot"
     }
-    replique.innerHTML = repliqueArrayCopies[0]
-    replique1.innerHTML = repliqueArrayCopies[1]
-    replique2.innerHTML = repliqueArrayCopies[2]
-    replique3.innerHTML = repliqueArrayCopies[3]
+    replique.innerHTML = repliqueArray[0]
+    replique1.innerHTML = repliqueArray[1]
+    replique2.innerHTML = repliqueArray[2]
+    replique3.innerHTML = repliqueArray[3]
 })
 console.log(btnBas)
